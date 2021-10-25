@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.realestateapp.databinding.ActivityMainBinding
 
+
 class MainActivity : AppCompatActivity() {
 
     //view binding
@@ -19,6 +20,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,LoginActivity::class.java))
         }
 
+        //When user is going to click on SkipBtn
+        binding.skipBtn.setOnClickListener{
+            startActivity(Intent(this,LoginActivity::class.java))
+        }
 
     }
 }

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RealEstateApp</string>
+    <string name="new_user">Not Registered? <b>SignUp</b></string>
 </resources>
