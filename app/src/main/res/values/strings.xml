@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">RealEstateApp</string>
     <string name="new_user">Not Registered? <b>SignUp</b></string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="register_name">Name</string>
+    <string name="register_email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="please_login">Please Login</string>
+    <string name="register">Register</string>
 </resources>
