@@ -71,10 +71,9 @@ class LoginActivity : AppCompatActivity() {
 
         firebaseAuth.signInWithEmailAndPassword(email, password)
             .addOnSuccessListener {
-                progressDialog.dismiss()
                 Toast.makeText(this,"Login Credentials Verified!!", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, MainActivity::class.java))
-                finish()
+                progressDialog.dismiss()
             }
             .addOnFailureListener{
                 progressDialog.dismiss()
