@@ -8,11 +8,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.view.isVisible
 import com.example.realestateapp.databinding.ActivityUploadBinding
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
+import java.util.*
 
 class UploadActivity : AppCompatActivity() {
 
@@ -22,6 +25,8 @@ class UploadActivity : AppCompatActivity() {
     private lateinit var progressDialog: ProgressDialog
     // Image URL
     private lateinit var filepath: Uri
+
+    val property = Property()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //this line of code will bring all the ids from xml
@@ -48,7 +53,7 @@ class UploadActivity : AppCompatActivity() {
 
 
                 //creating the instance of the Property
-                val property = Property()
+
                 property.address = binding.addressEditText.text.toString()
                 property.postalCode = binding.postalCodeEditText.text.toString()
                 property.city = binding.cityEditText.text.toString()
@@ -105,7 +110,9 @@ class UploadActivity : AppCompatActivity() {
             pd.setTitle("Uploading...")
             pd.show()
 
-            var imageRef = FirebaseStorage.getInstance().getReference()
+            var randomKey = UUID.randomUUID().toString()
+
+            var imageRef = FirebaseStorage.getInstance().getReference().child("images/"+binding.addressEditText.text.toString()+".jpg")
             imageRef.putFile(filepath)
                 .addOnSuccessListener {
                     pd.dismiss()

@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity(), PropertyAdapter.PropertyItemListener {
 //      When user is going to click on Login
         binding.add.setOnClickListener{
             startActivity(Intent(this,UploadActivity::class.java))
+
         }
 
 

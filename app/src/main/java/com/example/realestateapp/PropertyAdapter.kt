@@ -48,7 +48,6 @@ class PropertyAdapter (val context : Context,
         viewHolder.addressTextView.text = property.address
         viewHolder.cityTextView.text = property.city
         viewHolder.postalTextView.text = property.postalCode
-        viewHolder.bedTextView.text = property.bed!!.toString()
 
         viewHolder.itemView.setOnClickListener{
             itemListener.propertySelected(property)

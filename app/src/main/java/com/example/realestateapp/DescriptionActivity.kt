@@ -1,8 +1,12 @@
 package com.example.realestateapp
 
+import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.realestateapp.databinding.ActivityDescriptionBinding
+import com.google.firebase.storage.FirebaseStorage
+import java.io.File
 
 class DescriptionActivity : AppCompatActivity() {
     private lateinit var binding : ActivityDescriptionBinding
@@ -23,5 +27,22 @@ class DescriptionActivity : AppCompatActivity() {
 
         val propertyID = intent.getStringExtra("propertyID")
 
+        binding.download.setOnClickListener {
+            //ADDING THE IMAGEVIEW BACK
+            binding.imageView2.setVisibility(View.VISIBLE)
+
+            val imageName = intent.getStringExtra("propertyAddress").toString()
+            val storageRef = FirebaseStorage.getInstance().reference.child("images/$imageName.jpg")
+
+            val localfile = File.createTempFile("tempImage","jpg")
+            storageRef.getFile(localfile)
+                .addOnSuccessListener {
+                val bitmap = BitmapFactory.decodeFile(localfile.absolutePath)
+                binding.imageView2.setImageBitmap(bitmap)
+                }
+
+            //REMOVING THE BUTTON
+            binding.download.setVisibility(View.GONE)
+        }
     }
 }
