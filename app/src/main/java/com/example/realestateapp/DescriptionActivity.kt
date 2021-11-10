@@ -30,6 +30,8 @@ class DescriptionActivity : AppCompatActivity() {
         binding.download.setOnClickListener {
             //ADDING THE IMAGEVIEW BACK
             binding.imageView2.setVisibility(View.VISIBLE)
+            binding.imageView2.getLayoutParams().height = 426
+            binding.imageView2.getLayoutParams().width = 640
 
             val imageName = intent.getStringExtra("propertyAddress").toString()
             val storageRef = FirebaseStorage.getInstance().reference.child("images/$imageName.jpg")
