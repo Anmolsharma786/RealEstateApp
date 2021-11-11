@@ -19,7 +19,7 @@ Works on mobiles and tablets with **Android 4.0.3 and up**.
 
 Properties Listing         |  Properties Desctiption 
 :-------------------------:|:-------------------------:
-<img src="https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/properties.JPG" width="200">  | <img src=https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/PropertyDescription.JPG" width="200">
+<img src="https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/properties.JPG" width="200">  | <img src="https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/PropertyDescription.JPG" width="200">
 
 ## Version 
 * Version 1.0.0
