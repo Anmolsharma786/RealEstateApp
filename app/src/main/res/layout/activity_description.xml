@@ -7,7 +7,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:background="@drawable/back"
     tools:context=".DescriptionActivity"
     android:orientation="horizontal">
 
@@ -23,15 +22,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RoomText" />
 
+    <TextView
+        android:id="@+id/photoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Home View: -"
+        android:visibility="invisible"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="invisible"
-
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -167,7 +178,7 @@
         android:id="@+id/RoomText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:text="Rooms: -"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -186,7 +197,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bath"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:textSize="20sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
