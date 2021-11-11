@@ -17,7 +17,7 @@ Works on mobiles and tablets with **Android 4.0.3 and up**.
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/login.JPG" width="200">  | <img src="https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/Register.JPG" width="200"> |  <img src="https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/add.JPG" width="200">
 
-Properties Listing        |  Properties Desctiption 
+Properties Listing         |  Properties Desctiption 
 :-------------------------:|:-------------------------:
 <img src="https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/properties.JPG" width="200">  |  <img src=https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/PropertyDescription.JPG" width="200">
 
