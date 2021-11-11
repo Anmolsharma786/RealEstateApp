@@ -6,35 +6,24 @@ Works on mobiles and tablets with **Android 4.0.3 and up**.
 
 ## Features
 
-* ** Login, ** this app provides the functionalities of Login.
-* ** Register, ** this app provides the functionalities of Register.
-* ** Upload, ** this app provides the functionalities to Upload. You can upload the image, address, postal code, and city.
-* ** View, ** this app provides the functionalities of View. You can view the listed properties.
+* **Login,** this app provides the functionalities of Login.
+* **Register,** this app provides the functionalities of Register.
+* **Upload,** this app provides the functionalities to Upload. You can upload the image, address, postal code, and city.
+* **View,** this app provides the functionalities of View. You can view the listed properties.
 
 ### Screenshots
 
- Home Screen               |  Products Page            | Product Detail Page       | Product Image Gallery
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/Login.JPG" width="200">  | <img src="https://github.com/Adamouization/FCF-Real-Estate-Monaco-Android-App/blob/master/media/Screenshots%20playstore/screenshots%20anglais/Screenshot_20160726-122437.png" width="200"> |  <img src="https://github.com/Adamouization/FCF-Real-Estate-Monaco-Android-App/blob/master/media/Screenshots%20playstore/screenshots%20anglais/Screenshot_20160726-122445.png" width="200"> | <img src="https://github.com/Adamouization/FCF-Real-Estate-Monaco-Android-App/blob/master/media/Screenshots%20playstore/screenshots%20anglais/Screenshot_20160726-122452.png" width="200">
+ Home Screen               |  Register Page            | Property Upload       
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/login.JPG" width="200">  | <img src="https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/Register.JPG" width="200"> |  <img src="https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/add.JPG" width="200">
 
-Search Engine Page         |  Contact Page             | Favourites Selection      | Navigation Menu
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://github.com/Adamouization/FCF-Real-Estate-Monaco-Android-App/blob/master/media/Screenshots%20playstore/screenshots%20anglais/Screenshot_20160726-122550.png" width="200">  |  <img src="https://github.com/Adamouization/FCF-Real-Estate-Monaco-Android-App/blob/master/media/Screenshots%20playstore/screenshots%20anglais/Screenshot_20160726-122610.png" width="200"> |  <img src="https://github.com/Adamouization/FCF-Real-Estate-Monaco-Android-App/blob/master/media/Screenshots%20playstore/screenshots%20anglais/Screenshot_20160726-122631.png" width="200"> | <img src="https://github.com/Adamouization/FCF-Real-Estate-Monaco-Android-App/blob/master/media/Screenshots%20playstore/screenshots%20anglais/Screenshot_20160726-122642.png" width="200">
-
-## Download
-<a href="https://bit.ly/2qqexsH"><img src="https://github.com/Adamouization/FCF-Real-Estate-Monaco-Android-App/blob/master/media/get-it-on-google-play.png" width="150"></a> <img src="https://github.com/Adamouization/FCF-Real-Estate-Monaco-Android-App/blob/master/media/qrcode_googleplaystore.png" width="150">
-
-## Third party libraries
-* [Android Universal Image Loader](https://github.com/nostra13/Android-Universal-Image-Loader), see [license](https://github.com/nostra13/Android-Universal-Image-Loader/blob/master/LICENSE)
-
-## License 
-* see [LICENSE](https://github.com/Adamouization/FCF-Real-Estate-Monaco-Android-App/blob/master/LICENSE) file
-* see [MCM Legal Mentions](http://www.montecarlomultimedia.com/avertissement.php) webpage
+Properties Listing        |  Properties Desctiption 
+:-------------------------:|:-------------------------:
+<img src="https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/properties.JPG" width="200">  |  <img src=https://github.com/Anmolsharma786/Coder-Connect/blob/master/images/PropertyDescription.JPG" width="200">
 
 ## Version 
 * Version 1.0.0
 
 ## Contact
-* website: www.adam.jaamour.com
-* LinkedIn: [www.linkedin.com/in/adamjaamour](https://www.linkedin.com/in/adamjaamour/)
-* twitter: [@Adamouization](https://twitter.com/Adamouization)
+* LinkedIn: [https://www.linkedin.com/in/anmolsharma786/](https://www.linkedin.com/in/anmolsharma786/)
+* Contact Number: [+1(416)989-7247]
