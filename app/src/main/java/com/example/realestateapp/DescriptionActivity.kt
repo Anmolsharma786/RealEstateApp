@@ -1,8 +1,11 @@
 package com.example.realestateapp
 
+import android.content.Intent
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import com.example.realestateapp.databinding.ActivityDescriptionBinding
 import com.google.firebase.storage.FirebaseStorage
@@ -47,5 +50,33 @@ class DescriptionActivity : AppCompatActivity() {
             //REMOVING THE BUTTON
             binding.download.setVisibility(View.GONE)
         }
+        setSupportActionBar(binding.mainToolBar.toolbar)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.nav_menu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.ic_home ->{
+                startActivity(Intent(applicationContext, MainActivity::class.java))
+                return true
+            }
+            R.id.action_profile ->{
+                startActivity(Intent(applicationContext, ProfileActivity::class.java))
+                return true
+            }
+            R.id.ic_create ->{
+                startActivity(Intent(applicationContext, UploadActivity::class.java))
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    fun transformAge() :String{
+        return ""
     }
 }

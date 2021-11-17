@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -102,6 +104,30 @@ class UploadActivity : AppCompatActivity() {
                 Toast.makeText(this,"Every field is required", Toast.LENGTH_LONG).show()
             }
         }
+        setSupportActionBar(binding.mainToolBar.toolbar)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.nav_menu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.ic_home ->{
+                startActivity(Intent(applicationContext, MainActivity::class.java))
+                return true
+            }
+            R.id.action_profile ->{
+                startActivity(Intent(applicationContext, ProfileActivity::class.java))
+                return true
+            }
+            R.id.ic_create ->{
+                //startActivity(Intent(applicationContext, UploadActivity::class.java))
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun uploadFile() {

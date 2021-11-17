@@ -82,7 +82,6 @@ class RegisterActivity : AppCompatActivity() {
     private fun createUserAccount() {
         progressDialog.setMessage("Creating Account...")
         progressDialog.show()
-
         firebaseAuth.createUserWithEmailAndPassword(email, password)
             .addOnSuccessListener {
                 // saving information in RealTime Database
