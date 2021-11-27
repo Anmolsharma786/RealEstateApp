@@ -8,7 +8,11 @@ import android.util.Patterns
 import android.widget.Toast
 import com.example.realestateapp.databinding.ActivityLoginBinding
 import com.example.realestateapp.databinding.ActivityRegisterBinding
+import com.firebase.ui.auth.AuthUI
+import com.firebase.ui.auth.FirebaseAuthUIActivityResultContract
+import com.firebase.ui.auth.data.model.FirebaseAuthUIAuthenticationResult
 import com.google.firebase.auth.FirebaseAuth
+
 import com.google.firebase.database.FirebaseDatabase
 
 class LoginActivity : AppCompatActivity() {
@@ -42,6 +46,10 @@ class LoginActivity : AppCompatActivity() {
         //Login Click
         binding.loginBtn.setOnClickListener{
             validateData()
+        }
+
+        binding.googleLoginBtn.setOnClickListener {
+            startActivity(Intent(this, GoogleSignIn::class.java))
         }
     }
     private var email = ""
@@ -80,4 +88,6 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this,"LogIn Failed reason being ${it.message}!!", Toast.LENGTH_SHORT).show()
             }
     }
+
+
 }

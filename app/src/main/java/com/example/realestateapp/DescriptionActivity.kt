@@ -16,7 +16,7 @@ class DescriptionActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDescriptionBinding.inflate(layoutInflater)
+        binding = ActivityDescriptionBinding.inflate(layoutInflater) 
         setContentView(binding.root)
 
         // intent is going to make sure that we get the ids from previous xml
@@ -49,6 +49,14 @@ class DescriptionActivity : AppCompatActivity() {
 
             //REMOVING THE BUTTON
             binding.download.setVisibility(View.GONE)
+
+        }
+        binding.locationFAB.setOnClickListener{
+            val intent = Intent(this, MapsActivity::class.java)
+            intent.putExtra("propertyAddress", binding.address.text.toString())
+            intent.putExtra("propertyCity", binding.city.text.toString())
+            intent.putExtra("propertyPostal", binding.postal.text.toString())
+            startActivity(intent)
         }
         setSupportActionBar(binding.mainToolBar.toolbar)
     }

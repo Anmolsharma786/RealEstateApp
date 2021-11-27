@@ -46,7 +46,7 @@ class PropertyListViewModel : ViewModel() {
             // TIP always put the entire collection into the list not single by single that is wrong
             val propertyList = ArrayList<Property>()
 
-            //loop over the documents from the DB and create Restaurant objects
+            //loop over the documents from the DB and create Properties objects
             documents?.let {
                 for (document in documents) {
                     try {

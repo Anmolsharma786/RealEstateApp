@@ -1,12 +1,17 @@
 package com.example.realestateapp
 
 import android.content.Context
+import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.storage.FirebaseStorage
+import java.io.File
 
 class PropertyAdapter (val context : Context,
                        val properties : List<Property>,

@@ -18,14 +18,20 @@ import com.example.realestateapp.fragments.MessageFragment
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.ktx.storage
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 
 class MainActivity : AppCompatActivity(), PropertyAdapter.PropertyItemListener {
 
 
-    //firebase Auth
-    //view binding
+    // firebase Auth
+    // view binding
     private lateinit var binding: ActivityMainBinding
+    val imageRef = Firebase.storage.reference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,11 +42,11 @@ class MainActivity : AppCompatActivity(), PropertyAdapter.PropertyItemListener {
         // This gets the data from the Firebase and then passes it to the adapter where adapter will put in child xml and then child xml will to parent xml
         val viewModel : PropertyListViewModel by viewModels()
         viewModel.getRestaurants().observe( this, {
-            //passing list of restaurants  we got from "RestaurantListViewModel" as arguments using
+            //passing list of properties we got from "PropertyListViewModel" as arguments using
             // lambda functions
-                restaurants ->
+                properties ->
             //creating instance of adapter class
-            var propertyAdapter = PropertyAdapter(this, restaurants,this)
+            var propertyAdapter = PropertyAdapter(this, properties,this)
             binding.gridRecyclerView.adapter = propertyAdapter
         })
 
@@ -50,6 +56,7 @@ class MainActivity : AppCompatActivity(), PropertyAdapter.PropertyItemListener {
         }
         setSupportActionBar(binding.mainToolBar.toolbar)
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.nav_menu,menu)

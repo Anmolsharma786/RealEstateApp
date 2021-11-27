@@ -98,7 +98,6 @@ class UploadActivity : AppCompatActivity() {
                             Log.i("DB Message", message)
                         }
                     }
-
             }
             else{
                 Toast.makeText(this,"Every field is required", Toast.LENGTH_LONG).show()
