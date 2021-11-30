@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.realestateapp">
+    package="com.GC200419191.realestateapp">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RealEstateApp">
         <activity
-            android:name=".GoogleSignIn"
+            android:name="com.GC200419191.realestateapp.GoogleSignIn"
             android:exported="true" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -32,20 +32,20 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.GC200419191.realestateapp.MapsActivity"
             android:exported="true"
             android:label="@string/title_activity_maps"></activity>
         <activity
-            android:name=".ProfileActivity"
+            android:name="com.GC200419191.realestateapp.ProfileActivity"
             android:exported="true" />
         <activity
-            android:name=".DescriptionActivity"
+            android:name="com.GC200419191.realestateapp.DescriptionActivity"
             android:exported="true" />
         <activity
-            android:name=".UploadActivity"
+            android:name="com.GC200419191.realestateapp.UploadActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.GC200419191.realestateapp.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,10 +54,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.GC200419191.realestateapp.RegisterActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.GC200419191.realestateapp.MainActivity"
             android:exported="true">
 
         </activity>
